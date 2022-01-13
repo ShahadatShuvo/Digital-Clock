@@ -68,6 +68,14 @@ label:active:after {
     width: 50px;
 }
 
+.textSize1 {
+    font-size: 1.6rem;
+}
+
+.textSize2 {
+    font-size: 1.9rem;
+}
+
 @media only screen and (max-width: 425px) {
     /*Small smartphones [325px -> 425px]*/
     .display {
@@ -84,5 +92,11 @@ label:active:after {
         top: 50%;
         left: 50%;
         transform: translate(-46%, -50%);
+    }
+    .textSize1 {
+        font-size: 1rem;
+    }
+    .textSize2 {
+        font-size: 1.3rem;
     }
 }
