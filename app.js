@@ -39,6 +39,8 @@ function displayDateEnglish() {
     today.innerHTML = dateFormat;
 }
 
+console.log(`Developed by: HossAin Shuvo`);
+console.log(`Facebook: https://www.facebook.com/hossain.shuvo.7860/`);
 
 function digitalClock() {
     let d = new Date();
