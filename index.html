@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- own css  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- bootstrap css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Digital Clock</title>
+
+</head>
+
+<body class="bg-light">
+    <div class="container wrapper">
+        <div class="row child justify-content-center mt-5 display align-items-center" style="border-radius: 10px;">
+            <div class="col-10 col-md-5 text-center fs-5 fs-md-3">
+                <h5 id="title1">Today</h5>
+                <span id="today"></span>
+                <span></span>
+            </div>
+            <div class="col-10 col-md-4 text-center fs-3 fs-md-1">
+                <h5 id="title2">Time</h5>
+                <span id="time"></span>
+            </div>
+            <div class="col-3 col-md-2 mt-4">
+                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- own js  -->
+    <script src="./app.js"></script>
+
+    <!-- js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
