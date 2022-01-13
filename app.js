@@ -46,14 +46,13 @@ function digitalClock() {
     let minutes = d.getMinutes();
     let seconds = d.getSeconds();
     let result = '';
-
+    if (minutes < 10) {
+        minutes = '0' + minutes;
+    }
+    if (seconds < 10) {
+        seconds = '0' + seconds;
+    }
     if (Switch.checked == false) {
-        if (minutes < 10) {
-            minutes = '0' + minutes;
-        }
-        if (seconds < 10) {
-            seconds = '0' + seconds;
-        }
         displayDateEnglish();
         if (hours <= 12) {
             result = `${hours} : ${minutes} : ${seconds} AM`;
