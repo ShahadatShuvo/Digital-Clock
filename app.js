@@ -26,6 +26,7 @@ function displayDateBangla() {
 
 function displayDateEnglish() {
     title1.innerHTML = 'Today';
+    title2.innerHTML = 'Time';
     let d = new Date();
     let arrDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let arrMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
