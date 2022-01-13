@@ -46,13 +46,14 @@ function digitalClock() {
     let minutes = d.getMinutes();
     let seconds = d.getSeconds();
     let result = '';
-    if (minutes < 10) {
-        minutes = '0' + minutes;
-    }
-    if (seconds < 10) {
-        seconds = '0' + seconds;
-    }
+
     if (Switch.checked == false) {
+        if (minutes < 10) {
+            minutes = '0' + minutes;
+        }
+        if (seconds < 10) {
+            seconds = '0' + seconds;
+        }
         displayDateEnglish();
         if (hours <= 12) {
             result = `${hours} : ${minutes} : ${seconds} AM`;
@@ -67,19 +68,19 @@ function digitalClock() {
             let resultedHours = calculateBanglaTime(hours);
             let resultedMinutes = calculateBanglaTime(minutes);
             let resultedSeconds = calculateBanglaTime(seconds);
-            result = `0${resultedHours} : ${resultedMinutes} : ${resultedSeconds} অপরাহ্ন`;
+            result = `০${resultedHours} : ${resultedMinutes} : ${resultedSeconds} অপরাহ্ন`;
             time.innerHTML = result;
         } else if (hours < 18 && hours > 12) {
             let resultedHours = calculateBanglaTime(hours - 12);
             let resultedMinutes = calculateBanglaTime(minutes);
             let resultedSeconds = calculateBanglaTime(seconds);
-            result = `0${resultedHours} : ${resultedMinutes} : ${resultedSeconds} মধ্যাহ্ন`;
+            result = `০${resultedHours} : ${resultedMinutes} : ${resultedSeconds} মধ্যাহ্ন`;
             time.innerHTML = result;
         } else {
             let resultedHours = calculateBanglaTime(hours - 12);
             let resultedMinutes = calculateBanglaTime(minutes);
             let resultedSeconds = calculateBanglaTime(seconds);
-            result = `0${resultedHours} : ${resultedMinutes} : ${resultedSeconds} অপরাহ্ন`;
+            result = `০${resultedHours} : ${resultedMinutes} : ${resultedSeconds} অপরাহ্ন`;
             time.innerHTML = result;
         }
     }
