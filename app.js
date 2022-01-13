@@ -84,7 +84,7 @@ function digitalClock() {
     }
 }
 time.innerHTML = digitalClock();
-setInterval(digitalClock, 1000);
+setInterval(digitalClock, 10);
 
 function calculateBanglaTime(value) {
     let arrValue = [];
